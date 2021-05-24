@@ -1,5 +1,4 @@
 # Software-Testing
-Assignment
 # Bài tập nhóm: Kiểm thử phần mềm
 Mỗi nhóm gồm 4-5 sinh viên (Chọn 1 trong 2 bài tập ở bên dưới).
  Viết Test-case theo template mẫu, Kiểm thử tự động (dùng Selenium, Junit hoặc TestNG/ pytest,…cho các ca kiểm thử ở bài tập 1,2.
@@ -11,22 +10,22 @@ Nộp bài sẽ gởi link Git hub lên trang elearning (phần assignment cho T
 Username/Password: Admin/Admin123
 Click on In-patient ward
 Yêu cầu: Viết các test case kiểm thử cho các test scenario sau 
-Login
-Logout
-Register a Patient
-Find Patient Record
-View the Patient
-Search a Patient
-Book an Appointment
-Capture Vitals
+###### Login
+###### Logout
+###### Register a Patient
+###### Find Patient Record
+###### View the Patient
+###### Search a Patient
+###### Book an Appointment
+###### Capture Vitals
 # 2.	Bài tập 2: http://www.demo.guru99.com/V4/
 Yêu cầu: Viết test-case cho các trường hợp kiểm thử sau:
-Login
-New Customer
-New Account
-Deposit
-Widthdraw
-Fund Transfer
-Customized Statement Form
-Log out
+###### Login
+###### New Customer
+###### New Account
+###### Deposit
+###### Widthdraw
+###### Fund Transfer
+###### Customized Statement Form
+###### Log out
 
