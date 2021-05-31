@@ -1,4 +1,4 @@
-package login;
+package new_customer;
 
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
