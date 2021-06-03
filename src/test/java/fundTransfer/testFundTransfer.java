@@ -6,7 +6,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.FundTransfer;
 import pages.FundTransferDetails;
-
+//
+//d
 public class testFundTransfer extends BaseTests {
     @Test
     @DisplayName("TC_001: Fund Transfer Successful")
