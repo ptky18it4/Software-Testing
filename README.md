@@ -14,7 +14,8 @@ Nộp bài sẽ gởi link Git hub lên trang elearning (phần assignment cho T
 >  * Tại đây, nhóm chọn **bài số 2** để làm.
 >  * Một tài khoản **chỉ sửa dụng được 20 ngày** sau khi đăng ký mà tài khoản trong bài làm là đc đăng ký ngày 22/05 nên 11/06 tài 
   khoản đó hết hạn không đăng nhập được.
-
+>  * Về Test Case và Test Scenario sẽ được đặt ở folder resource, như hình bên dưới.
+![img.png](img.png)
 # 1.	Bài tập 1: https://demo.openmrs.org/openmrs/login.htm
 Username/Password: Admin/Admin123
 Click on In-patient ward
