@@ -22,10 +22,9 @@ public class BaseTest {
         //System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         DesiredCapabilities dc = new DesiredCapabilities();
         dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-
         driver = new ChromeDriver();
-//        driver.get("http://www.demo.guru99.com/V4/manager/addcustomerpage.php");
-        driver.get("http://demo.guru99.com/v4/manager/addAccount.php");
+        driver.get("http://www.demo.guru99.com/V4/manager/addcustomerpage.php");
+//        driver.get("http://demo.guru99.com/v4/manager/addAccount.php");
         driver.manage().window().maximize();
         loginPage = new LoginPage(driver);
 
