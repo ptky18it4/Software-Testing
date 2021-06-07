@@ -16,11 +16,11 @@ public class testFundTransfer extends BaseTests {
         Thread.sleep(1000);
         fundTransfer.setPayeeAccount("93278");
         Thread.sleep(1000);
-        fundTransfer.setAmount("200000");
+        fundTransfer.setAmount("2000");
         fundTransfer.setDes("ck");
         Thread.sleep(1000);
         FundTransferDetails fundTransferDetails = fundTransfer.clickSubmit();
-
+        Assertions.assertEquals(fundTransferDetails.getAlertFundTransfer(),"Fund Transfer Details","Message");
     }
     @Test
     @DisplayName("TC_002: INVALID Payer Account No")
@@ -34,7 +34,7 @@ public class testFundTransfer extends BaseTests {
         fundTransfer.setDes("ck");
         Thread.sleep(2000);
         FundTransferDetails fundTransferDetails = fundTransfer.clickSubmit();
-        Assertions.assertEquals(fundTransferDetails.getAlertText(),"Account does not exist","Message");
+        Assertions.assertEquals(fundTransferDetails.getAlertText(),"Account 1000does not exist!!!","Message");
 
     }
     @Test
@@ -49,7 +49,7 @@ public class testFundTransfer extends BaseTests {
         fundTransfer.setDes("ck");
         Thread.sleep(2000);
         FundTransferDetails fundTransferDetails = fundTransfer.clickSubmit();
-        Assertions.assertEquals(fundTransferDetails.getAlertText(),"Account does not exist","Message");
+        Assertions.assertEquals(fundTransferDetails.getAlertText(),"Account 1000does not exist","Message");
     }
     @Test
     @DisplayName("TC_004: INCORRECT character Payer Account No")
@@ -118,7 +118,7 @@ public class testFundTransfer extends BaseTests {
         fundTransfer.setAmount("200000");
         fundTransfer.setDes("ck");
         Thread.sleep(2000);
-        Assertions.assertEquals(fundTransfer.getMessagePayee()," Payee Account Number must not be blank","Message");
+        Assertions.assertEquals(fundTransfer.getMessagePayee(),"Payees Account Number must not be blank","Message");
 
     }
     @Test

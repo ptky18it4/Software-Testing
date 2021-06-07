@@ -13,6 +13,11 @@ public class CustomStatement {
     private By btnSubmit = By.name("AccSubmit");
     private By btnReset = By.name("res");
     private By btnHome = By.linkText("Home");
+    private By alertAccount = By.id("message2");
+    private By alertMinium = By.id("message12");
+    private By alertNumber = By.id("message13");
+    private By alertFromDate = By.id("message26");
+    private By alertToDate = By.id("message27");
     public CustomStatement(WebDriver driver){
         this.driver = driver;
     }
@@ -32,19 +37,19 @@ public class CustomStatement {
         driver.findElement(numberTranscation).sendKeys(e);
     }
     public String getMessageAccountNo(){
-        return driver.findElement(accountNo).getText();
+        return driver.findElement(alertAccount).getText();
     }
     public String getMessageFormDate(){
-         return driver.findElement(formDate).getText();
+         return driver.findElement(alertFromDate).getText();
     }
     public String getMessageToDate(){
-        return driver.findElement(toDate).getText();
+        return driver.findElement(alertToDate).getText();
     }
     public String getMessageMiniumTransaction(){
-        return driver.findElement(miniumTransaction).getText();
+        return driver.findElement(alertMinium).getText();
     }
     public String getMessageNumberTransaction(){
-        return driver.findElement(numberTranscation).getText();
+        return driver.findElement(alertNumber).getText();
     }
     public void clickReset(){
         driver.findElement(btnReset).click();

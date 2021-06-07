@@ -24,7 +24,7 @@ public class testCustomStatement extends BaseTests {
         customStatement.setNumberTranscation("1000000");
         Thread.sleep(1000);
         CustomStatementDetails customStatementDetails = customStatement.clickSubmit();
-
+        Assertions.assertEquals(customStatementDetails.getCustomised(),"Transaction Details for Account No: 93277 from Date: 2021-05-28 to: 2021-05-31","Message");
     }
     @Test
     @DisplayName("TC_002: INVALID Account No")
@@ -89,7 +89,7 @@ public class testCustomStatement extends BaseTests {
         customStatement.setMiniumTransaction("100");
         Thread.sleep(1000);
         customStatement.setNumberTranscation("A1000000");
-        Assertions.assertEquals(customStatement.getMessageAccountNo(),"Characters are not allowed","Message");
+        Assertions.assertEquals(customStatement.getMessageNumberTransaction(),"Characters are not allowed","Message");
 
     }
     @Test
@@ -121,7 +121,7 @@ public class testCustomStatement extends BaseTests {
         customStatement.setMiniumTransaction("");
         Thread.sleep(1000);
         customStatement.setNumberTranscation("1000000");
-        Assertions.assertEquals(customStatement.getMessageAccountNo()," Minium Transaction Value  must not be blank","Message");
+        Assertions.assertEquals(customStatement.getMessageMiniumTransaction()," Minium Transaction Value must not be blank","Message");
 
     }
     @Test
@@ -137,7 +137,7 @@ public class testCustomStatement extends BaseTests {
         customStatement.setMiniumTransaction("100");
         Thread.sleep(1000);
         customStatement.setNumberTranscation("100000");
-        Assertions.assertEquals(customStatement.getMessageAccountNo()," Number of Transaction must not be blank","Message");
+        Assertions.assertEquals(customStatement.getMessageNumberTransaction()," Number of Transaction must not be blank","Message");
 
     }
     @Test
@@ -153,7 +153,7 @@ public class testCustomStatement extends BaseTests {
         customStatement.setMiniumTransaction("100");
         Thread.sleep(1000);
         customStatement.setNumberTranscation("1000000");
-        Assertions.assertEquals(customStatement.getMessageAccountNo()," From Date must not be blank","Message");
+        Assertions.assertEquals(customStatement.getMessageFormDate()," From Date must not be blank","Message");
 
     }
     @Test
@@ -169,7 +169,7 @@ public class testCustomStatement extends BaseTests {
         customStatement.setMiniumTransaction("100");
         Thread.sleep(1000);
         customStatement.setNumberTranscation("1000000");
-        Assertions.assertEquals(customStatement.getMessageAccountNo()," To Date must not be blank","Message");
+        Assertions.assertEquals(customStatement.getMessageToDate()," To Date must not be blank","Message");
 
     }
     @Test

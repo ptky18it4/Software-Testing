@@ -12,6 +12,10 @@ public class FundTransfer {
     private By btnSubmit = By.name("AccSubmit");
     private By btnReset = By.name("res");
     private By btnHome = By.linkText("Home");
+    private By alertPayer = By.id("message10");
+    private By alertPayee = By.id("message11");
+    private By alertAmount = By.id("message1");
+    private By alertDes = By.id("message17");
     public FundTransfer(WebDriver driver){
         this.driver = driver;
     }
@@ -31,16 +35,16 @@ public class FundTransfer {
         driver.findElement(btnReset).click();
     }
     public String getMessagePayer(){
-        return  driver.findElement(payerAccount).getText();
+        return  driver.findElement(alertPayer).getText();
     }
     public String getMessagePayee(){
-        return  driver.findElement(payeeAccount).getText();
+        return  driver.findElement(alertPayee).getText();
     }
     public String getMessageAmount(){
-        return  driver.findElement(amount).getText();
+        return  driver.findElement(alertAmount).getText();
     }
     public String getMessageDescription(){
-        return  driver.findElement(des).getText();
+        return  driver.findElement(alertDes).getText();
     }
     public void clickBtnHome(){
         driver.findElement(btnHome).click();
